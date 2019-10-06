@@ -1,14 +1,14 @@
 {
-  "name": "node-cleaner",
+  "name": "node-modules-cleaner",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Cleans a workspace out of unused / old node_modules",
+  "main": "build/index.js",
   "scripts": {
-    "start": "tsc && node build/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "tsc",
+    "start": "tsc && node build/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pascal Vaccaro",
   "license": "ISC",
   "dependencies": {
     "@types/fs-extra": "^8.0.0",

@@ -3,7 +3,7 @@ import { join, dirname } from 'path';
 import readline from 'readline';
 
 const [,, BASE_DIRECTORY, days] = process.argv;
-const MAX_AGE = Number(days) * 24 * 60 * 60 * 1000;
+const MAX_AGE = Number(days || 0) * 24 * 60 * 60 * 1000;
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
